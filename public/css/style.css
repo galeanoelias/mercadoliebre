@@ -1,0 +1,92 @@
+:root{
+    --amarillo: #EAC926;
+    --Azul: #03264C;
+    --Celeste: #1259c3;
+    --Gris-oscuro: #666;
+    --Gris-claro: #ebebeb;
+    --Verde: #39b54a;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.contain-header {
+    width: 100vw;
+}
+
+.container {
+    background: var(--amarillo);
+}
+
+.navbar {
+    margin: 6px;
+}
+
+.searchbar {
+    display: inline-block;
+    border: 1px solid var(--Gris-oscuro);
+    background: var(--Gris-claro);
+    margin: 6px;
+}
+
+.container-nav {
+    font-family: 'Roboto', sans-serif;
+    font-size: 12px;
+}
+
+.container-nav .sercher {
+    text-align: center;
+}
+
+.sercher i {
+    padding-left: 3px;
+}
+
+.loginbar li i {
+    padding-left: 3px;
+}
+
+section h2 {
+    font-size: 24px;
+}
+
+.price {
+    font-size: 18px;
+}
+
+.discount, .name-products {
+    font-size: 16px;
+}
+
+.burger-menu {
+    width: 30px;
+    box-sizing: border-box;
+    display: inline-block;
+    padding: 7px;
+    margin: 10px 45%;
+    background: var(--Celeste);
+    color: var(--Gris-claro);
+    border-radius: 15%;
+}
+
+.burger-menu i {
+    text-align: center;
+}
+
+.footer-section {
+    width: 100vw;
+    display: block;
+}
+
+.footer-section .flex-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.flex-container h3 i {
+    color: var(--Celeste);
+}
