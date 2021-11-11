@@ -7,86 +7,226 @@
     --Verde: #39b54a;
 }
 
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
 * {
     padding: 0;
     margin: 0;
+    font-size: 12px;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    background: var(--Gris-claro);
 }
 
 .contain-header {
     width: 100vw;
+    display: flex;
+    flex-direction: column;
+    background: var(--amarillo)
 }
 
-.container {
-    background: var(--amarillo);
-}
-
-.navbar {
-    margin: 6px;
+.flex-header {
+    width: 100vw;
 }
 
 .searchbar {
-    display: inline-block;
-    border: 1px solid var(--Gris-oscuro);
-    background: var(--Gris-claro);
-    margin: 6px;
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
 }
 
-.container-nav {
-    font-family: 'Roboto', sans-serif;
+.searchbar .logo {
+    width: 43vw;
+    padding: 5px;
+}
+
+.searchbar img {
+    object-fit: cover;
+}
+
+.searchbar .search {
+    width: 50vw;
+    padding: 5px;
+}
+
+.searchbar input {
+    width: 75%;
+    border: none;
+    border-radius: 3px;
+    padding: 7px;
+    margin: 5px;
+}
+
+.search button {
+    position: relative;
+    z-index: 100;
+    background: #fff;
+    border: none;
     font-size: 12px;
+    right: 26px;
 }
 
-.container-nav .sercher {
-    text-align: center;
+.searchbar .sub-title {
+    font-size: 12px;
+    padding-left: 43px;
 }
 
-.sercher i {
-    padding-left: 3px;
+
+.sub-title h4 {
+    display: inline-block;
 }
 
-.loginbar li i {
-    padding-left: 3px;
+.end-header {
+    width: 98%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    margin: 5px;
 }
 
-section h2 {
-    font-size: 24px;
+.end-header .loginbar {
+    padding-top: 10px;
 }
-
-.price {
-    font-size: 18px;
-}
-
-.discount, .name-products {
-    font-size: 16px;
+ 
+.end-header .loginbar ul li i {
+    padding: 2px 0 2px 5px;
 }
 
 .burger-menu {
     width: 30px;
     box-sizing: border-box;
-    display: inline-block;
-    padding: 7px;
+    padding: 9px;
     margin: 10px 45%;
     background: var(--Celeste);
     color: var(--Gris-claro);
     border-radius: 15%;
 }
 
-.burger-menu i {
+#check {
+    display: none;
+}
+
+.products {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100vw;
+}
+
+.visited, .offers {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.visited h2 {
+    font-size: 24px;
+    margin: 5px auto;
+}
+
+.offers h2 {
+    font-size: 24px;
+    margin: 5px 10px;
+}
+
+.flex__container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.flex__container article {
+    width: 300px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background: #fff;
+    margin: 5px 10px;
+}
+
+.flex__container article img {
+    width: 300px;
+    height: 300px;
+}
+
+.flex__container article .price {
+    display: inline-block;
+    width: calc(300px - 70%);
+    font-size: 18px;
     text-align: center;
+}
+
+.flex__container article .discount {
+    display: inline-block;
+    width: calc(300px - 30%);
+    font-size: 16px;
+    color: #39b54a;
+}
+
+.flex__container .name__products-1 {
+    font-size: 16px;
+    color: var(--Gris-oscuro);
+    padding: 10px 18px;
+}
+
+.flex__container .name__products-2 {
+    font-size: 16px;
+    color: var(--Gris-oscuro);
+    padding: 10px 7px;
+}
+
+.flex__container .name__products-3 {
+    font-size: 16px;
+    color: var(--Gris-oscuro);
+    padding: 10px 14px;
+}
+
+.flex__container .name__products-4 {
+    font-size: 16px;
+    color: var(--Gris-oscuro);
+    padding: 10px 13px;
 }
 
 .footer-section {
-    width: 100vw;
+    width: 300px;
     display: block;
+    background: #fff;
+    margin: 3px auto;
 }
 
-.footer-section .flex-container {
+.footer-section .footer-flex {
     display: flex;
     flex-direction: column;
-    align-items: center;
     text-align: center;
+    padding: 20px 30px 0;
 }
 
-.flex-container h3 i {
+.footer-flex i {
     color: var(--Celeste);
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+.footer-flex p {
+    color: var(--Gris-oscuro);
+    font-weight: 600;
+    padding-bottom: 30px;
+}
+
+.footer-flex .copyright {
+    font-size: 12px;
+    color: var(--Gris-oscuro);
 }
