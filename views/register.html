@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="/css/style.css">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" />
 </head>
-<body class="contein-register">
+<body>
     <div class="contain-header">
         <header class="flex-header">
             <div class="searchbar">
@@ -52,9 +52,9 @@
         </header>
     </div>
     <div class="register">
-        <div class="photo">
-            <div>
-                <img id="preImage">
+        <div class="photo-id">
+            <div class="frame">
+                <img id="image">
             </div>
         </div>
         <form action="/">
@@ -64,40 +64,40 @@
                     <input type="file" id="file">
                 </label>
             </div>
-            <div class="contein-input name">
+            <div class="input name">
                 <label for="firstname"><input type="text" id="firstname" placeholder="Nombres" required></label>
                 <label for="lastname"><input type="text"id="lastname" placeholder="Apellido" required></label>
             </div>
-            <div class="contein-input user">
+            <div class="input user">
                 <label for="user"><input type="text" name="" id="user" placeholder="Ingrese su nombre de usuario" required></label>
             </div>
-            <div class="contein-input email">
+            <div class="input email">
                 <label for="email">
                     <input type="email" id="email" placeholder="Ingrese su email" required>
                 </label>
             </div>
-            <div class="contein-input pass">
+            <div class="input pass">
                 <label for="pass"><input type="password" id="pass" placeholder="Elija su contraseña, Alfanumerico" required pattern="^(?=\w*\d)(?=\w*[A-Z])(?=\w*[a-z])\S{8,16}$"></label>
             </div>
-            <div  class="contein-input rePass">
+            <div  class="input rePass">
                 <label for="rePass">
                     <input type="password" id="rePass" placeholder="Re-ingrese su contraseña" required pattern="^(?=\w*\d)(?=\w*[A-Z])(?=\w*[a-z])\S{8,16}$">
                 </label>
             </div>
-            <div class="contein-input date">
+            <div class="input date">
                 <label for="date">
                     <p><u>Fecha de nacimiento:</u></p>
                     <input type="date" id="date" required>
                 </label>
             </div>
-            <div class="contein-input radio">
+            <div class="input radio">
                 <div>
                     <p><u>¿Motivo del registro?</u></p>
                     <label><input type="radio" name="reason" id="reason"> Comprar </label>
                     <label><input type="radio" name="reason" id="reason"> Vender </label>
                 </div>
             </div>
-            <div class="contein-input check">
+            <div class="input check">
                 <p><u>¿Cuales son sus intereses?</u></p>
                 <label for="">Electro
                     <input type="checkbox" name="interests" value="Electro">
@@ -115,7 +115,7 @@
                     <input type="checkbox" name="interests" value="Vida Sana">
                 </label>
             </div>
-            <div class="contein-button">
+            <div class="contein-btn">
                 <button type="submit"><b>Enviar</b></button>
                 <button type="reset"><b>Empieza de nuevo</b></button>
             </div>

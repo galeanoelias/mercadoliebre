@@ -1,21 +1,21 @@
-.contein-login .login #title {
+.login #login-user {
     text-align: center;
     text-transform: uppercase;
     margin-top: 10vh;
 }
 
-.contein-login .login form .user,
-.contein-login .login form .pass {
+.login form .user,
+.login form .pass {
     width: 90%;
     height: 3rem;
 }
 
-.contein-login .login form .user input,
-.contein-login .login form .pass input {
+.login form .user input,
+.login form .pass input {
     width: 70%;
 }
 
-.contein-login .login form .contein-button button{
+.login form .contein-btn button{
     width: 85%;
     margin-top: 1.5rem;
     margin-bottom: 4rem;
@@ -24,17 +24,17 @@
 
 @media (min-width: 769px) {
 
-    .contein-login .login form .user,
-    .contein-login .login form .pass {
+    .login form .user,
+    .login form .pass {
     width: 60%;
     }
 
-    .contein-login .login form .user input,
-    .contein-login .login form .pass input {
+    .login form .user input,
+    .login form .pass input {
         width: 60%;
     }
 
-    .contein-login .login form .contein-button button{
+    .login form .contein-btn button{
         width: 40%;
     }
 

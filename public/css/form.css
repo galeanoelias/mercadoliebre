@@ -5,7 +5,7 @@ form {
     flex-direction: column;
 }
 
-form .contein-input{
+form .input{
     background-color: var(--yellow);
     border-radius: 20px;
     border: outset;
@@ -17,7 +17,7 @@ form .contein-input{
     margin: 0.7rem 0;
 }
 
-form .contein-input label{
+form .input label{
     width: 100%;
     height: 100%;
     display: flex;
@@ -25,20 +25,20 @@ form .contein-input label{
     align-items: center;
 }
 
-form .contein-input input {
+form .input input {
     border-radius: 6px;
     border: inset;
     text-align: center;
     box-shadow:inset 0px 0px 3px 1px var(--dark_grey);
 }
 
-form .contein-button {
+form .contein-btn {
     display: flex;
     justify-content: space-around;
     width: 100vw;
 }
 
-form .contein-button button {
+form .contein-btn button {
     background-color: var(--light_blue);
     padding: 10px 5px;
     height: 3.5rem;
@@ -49,7 +49,7 @@ form .contein-button button {
     transition: all 500ms ease-in-out;
 }
 
-form .contein-button button:hover {
+form .contein-btn button:hover {
     box-shadow: 0px 0px 3px 1px var(--dark_grey);
     background-color: #0022AA;
     color: white;
