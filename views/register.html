@@ -1,14 +1,14 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mercado Liebre</title>
-    <link rel="stylesheet" href="./css/style.css">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+    <title>Register</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" />
 </head>
-<body>
+<body class="contein-register">
     <div class="contain-header">
         <header class="flex-header">
             <div class="searchbar">
@@ -51,90 +51,76 @@
             </div>
         </header>
     </div>
-    <main class="products">
-        <section class="visited">
-            <h2>Basado en tus ultimas visitas</h2>
-            <div class="flex__container">
-                <article>
-                    <img src="./images/img-cafetera-moulinex.jpg">
-                    <div class="description">
-                        <i class="fas fa-truck"></i>
-                        <h3 class="price">$6.770</h3>
-                        <h3 class="discount">40% OFF</h3>
-                        <h3 class="name__products-1">Cafetera Moulinex</h3>
-                    </div>
-                </article>
-                <article>
-                    <img src="./images/img-macbook-pro-2019.jpg">
-                    <div class="description">
-                        <i class="fas fa-truck"></i>
-                        <h3 class="price">$230.000</h3>
-                        <h3 class="discount">20% off</h3>
-                        <h3 class="name__products-2">MacBook Pro 2019</h3>
-                    </div>
-                </article>
-                <article>
-                    <img src="./images/img-samsung-galaxy-s10.jpg">
-                    <div class="description">
-                        <i class="fas fa-truck"></i>
-                        <h3 class="price">$70.500</h3>
-                        <h3 class="discount">10% off</h3>
-                        <h3 class="name__products-3">Samsung Galaxy S10</h3>
-                    </div>
-                </article>
-                <article>
-                    <img src="./images/img-tv-samsung-smart.jpg">
-                    <div class="description">
-                        <i class="fas fa-truck"></i>
-                        <h3 class="price">$23.200</h3>
-                        <h3 class="discount">5% off</h3>
-                        <h3 class="name__products-4">SmartTv Samsung 43"</h3>
-                    </div>
-                </article>
+    <div class="register">
+        <div class="photo">
+            <div>
+                <img id="preImage">
             </div>
-        </section>
-        <section class="offers">
-            <h2>Ofertas</h2>
-            <div class="flex__container">
-                <article>
-                    <img src="./images/img-cafetera-moulinex.jpg">
-                    <div class="description">
-                        <i class="fas fa-truck"></i>
-                        <h3 class="price">$6.770</h3>
-                        <h3 class="discount">40% OFF</h3>
-                        <h3 class="name__products-1">Cafetera Moulinex</h3>
-                    </div>
-                </article>
-                <article>
-                    <img src="./images/img-macbook-pro-2019.jpg">
-                    <div class="description">
-                        <i class="fas fa-truck"></i>
-                        <h3 class="price">$230.000</h3>
-                        <h3 class="discount">20% off</h3>
-                        <h3 class="name__products-2">MacBook Pro 2019</h3>
-                    </div>
-                </article>
-                <article>
-                    <img src="./images/img-samsung-galaxy-s10.jpg">
-                    <div class="description">
-                        <i class="fas fa-truck"></i>
-                        <h3 class="price">$70.500</h3>
-                        <h3 class="discount">10% off</h3>
-                        <h3 class="name__products-3">Samsung Galaxy S10</h3>
-                    </div>
-                </article>
-                <article>
-                    <img src="./images/img-tv-samsung-smart.jpg">
-                    <div class="description">
-                        <i class="fas fa-truck"></i>
-                        <h3 class="price">$23.200</h3>
-                        <h3 class="discount">5% off</h3>
-                        <h3 class="name__products-4">SmartTv Samsung 43"</h3>
-                    </div>
-                </article>
-            </section>
         </div>
-    </main>
+        <form action="/">
+            <div class="contein-input file">
+                <label for="Photo">
+                    <p><u>Cargue una imagen de perfil:</u></p>
+                    <input type="file" id="file">
+                </label>
+            </div>
+            <div class="contein-input name">
+                <label for="firstname"><input type="text" id="firstname" placeholder="Nombres" required></label>
+                <label for="lastname"><input type="text"id="lastname" placeholder="Apellido" required></label>
+            </div>
+            <div class="contein-input user">
+                <label for="user"><input type="text" name="" id="user" placeholder="Ingrese su nombre de usuario" required></label>
+            </div>
+            <div class="contein-input email">
+                <label for="email">
+                    <input type="email" id="email" placeholder="Ingrese su email" required>
+                </label>
+            </div>
+            <div class="contein-input pass">
+                <label for="pass"><input type="password" id="pass" placeholder="Elija su contraseña, Alfanumerico" required pattern="^(?=\w*\d)(?=\w*[A-Z])(?=\w*[a-z])\S{8,16}$"></label>
+            </div>
+            <div  class="contein-input rePass">
+                <label for="rePass">
+                    <input type="password" id="rePass" placeholder="Re-ingrese su contraseña" required pattern="^(?=\w*\d)(?=\w*[A-Z])(?=\w*[a-z])\S{8,16}$">
+                </label>
+            </div>
+            <div class="contein-input date">
+                <label for="date">
+                    <p><u>Fecha de nacimiento:</u></p>
+                    <input type="date" id="date" required>
+                </label>
+            </div>
+            <div class="contein-input radio">
+                <div>
+                    <p><u>¿Motivo del registro?</u></p>
+                    <label><input type="radio" name="reason" id="reason"> Comprar </label>
+                    <label><input type="radio" name="reason" id="reason"> Vender </label>
+                </div>
+            </div>
+            <div class="contein-input check">
+                <p><u>¿Cuales son sus intereses?</u></p>
+                <label for="">Electro
+                    <input type="checkbox" name="interests" value="Electro">
+                </label>
+                <label for="">Moda
+                    <input type="checkbox" name="interests" value="Moda">
+                </label>
+                <label for="">Hogar
+                    <input type="checkbox" name="interests" value="Hogar">
+                </label>
+                <label for="">Jugueteria
+                    <input type="checkbox" name="interests" value="Jugueteria">
+                </label>
+                <label for="">Vida Sana
+                    <input type="checkbox" name="interests" value="Vida Sana">
+                </label>
+            </div>
+            <div class="contein-button">
+                <button type="submit"><b>Enviar</b></button>
+                <button type="reset"><b>Empieza de nuevo</b></button>
+            </div>
+        </form>
+    </div>
     <footer class="footer-section">
         <section class="footer-flex">
             <i class="fas fa-credit-card"></i>

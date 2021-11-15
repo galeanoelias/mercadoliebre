@@ -1,0 +1,281 @@
+body {
+    width: 100vw;
+    height: 100vh;
+    background: var(--Gris-claro);
+}
+
+.contain-header {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    background: var(--amarillo)
+}
+
+.flex-header {
+    width: 100vw;
+}
+
+.searchbar {
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.searchbar .logo {
+    width: 43vw;
+    padding: 5px;
+}
+
+.searchbar img {
+    object-fit: cover;
+}
+
+.searchbar .search {
+    width: 54vw;
+    padding: 5px;
+}
+
+.searchbar input {
+    width: 75%;
+    border: none;
+    border-radius: 3px;
+    padding: 7px;
+    margin: 5px;
+}
+
+.search button {
+    position: relative;
+    z-index: 100;
+    background: #fff;
+    border: none;
+    font-size: 12px;
+    right: 26px;
+}
+
+.searchbar .sub-title {
+    font-size: 12px;
+    padding-left: 43px;
+}
+
+
+.sub-title h4 {
+    display: inline-block;
+}
+
+.end-header {
+    width: 98%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    margin: 5px;
+}
+
+.end-header .navbar {
+    display: none;
+}
+
+.end-header .loginbar {
+    display: none;
+}
+
+.burger-menu {
+    width: 30px;
+    box-sizing: border-box;
+    padding: 9px;
+    margin: 10px 45%;
+    background: var(--Celeste);
+    color: var(--Gris-claro);
+    border-radius: 15%;
+}
+
+@media only screen and (min-width: 361px) {
+
+    .searchbar {
+        margin-top: 10px;
+    }
+
+    .searchbar .logo {
+        width: 30vw;
+    }
+
+    .searchbar .search {
+        width: 27vw;
+        padding: 5px 0 0 5px;
+    }
+    
+    .searchbar input {
+        width: 88%;
+        padding: 5px;
+        margin: 5px 0 3px;
+        font-size: 6px;
+    }
+    
+    .search button {
+        right: 09px;
+        font-size: 6px;
+        border-radius: 3px;
+    }
+
+    .search button i {
+        font-size: 6px;
+    }
+
+    .searchbar .sub-title {
+        width: 39vw;
+        display: flex;
+        padding: 18px 0 0;
+        margin: 0 7px 0 0;
+    }
+    
+    .sub-title i {
+        font-size: 6px;
+        margin: 0 1px 0 13px;
+    }
+    
+    .sub-title h4 {
+        display: inline-block;
+        font-size: 6px;
+    }
+    
+    .end-header {
+        width: 98%;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        margin: 5px 0;
+    }
+
+    .end-header .navbar {
+        width: 180px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .end-header .navbar ul {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        width: 100%;
+        align-items: center;
+    }
+
+    .end-header .navbar ul li {
+        font-size: 6px;
+        padding: 0 2px;
+    }
+     
+    .end-header .navbar ul li i {
+        padding: 2px 0 2px 5px;
+        font-size: 6px;
+    }
+    
+    .end-header .loginbar ul {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        width: 100%;
+        align-items: center;
+    }
+
+    .end-header .loginbar {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .end-header .loginbar ul li {
+        font-size: 6px;
+        padding: 0 4px;
+        margin: 0 5px;
+    }
+     
+    .end-header .loginbar ul li i {
+        padding: 2px 0 2px 2px;
+        font-size: 6px;
+    }
+    
+    .burger-menu {
+        display: none;
+    }
+}
+
+@media only screen and (min-width: 769px) {    
+    .searchbar {
+        flex-wrap: nowrap;
+    }
+    
+    .searchbar .logo {
+        width: 33%;
+        padding: 0;
+    }
+
+    .searchbar .search {
+        width: 33%;
+        padding: 0%;
+    }
+    
+    .searchbar input {
+        margin: 7% 0 0 6%;
+        font-size: 16px;
+    }
+    
+    .search button {
+        right: 13px;
+    }
+
+    .search button i {
+        font-size: 6px;
+    }
+
+    .searchbar .sub-title {
+        width: 41vw;
+        padding: 25px;
+        margin: 0;
+    }
+    
+    .sub-title i {
+        font-size: 16px;
+    }
+    
+    .sub-title h4 {
+        font-size: 13px;
+    }
+    
+    .end-header {
+        width: 100%;
+        justify-content: space-evenly;
+    }
+
+    .end-header .navbar {
+        width: 50%;
+    }
+
+    .end-header .navbar ul li {
+        font-size: 12px;
+        padding: 0 6px;
+        margin: 0 15px;
+    }
+     
+    .end-header .navbar ul li i {
+     font-size: 12px;   
+    }
+
+    .end-header .loginbar ul li {
+        font-size: 12px;
+        padding: 0 4px;
+        margin: 0 5px;
+    }
+     
+    .end-header .loginbar ul li i {
+        font-size: 12px;
+    }
+    
+    .burger-menu {
+        display: none;
+    }
+}
